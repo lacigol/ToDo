@@ -3,6 +3,8 @@ import java.util.Scanner;
 
 public class MainClass {
 	
+	static ToDoList toDoList = new ToDoList();
+	
 	public static void main(String[] args){
 		boolean exit = false;
 		do {
@@ -35,6 +37,22 @@ public class MainClass {
 			
 		case 2:
 			System.out.println("2");
+			
+
+			scanner.nextLine();
+			//int taskId;
+			System.out.println("1. Enter Task Name.");
+			String taskName = scanner.nextLine();
+			System.out.println("2. Enter Task Content.");
+			String taskContent = scanner.nextLine();
+			System.out.println("3. Set Task Priority.");
+			int taskPriority = scanner.nextInt();
+
+			System.out.println("Item Save.");
+			//boolean isComplete scanner.();
+			Task saveing = new Task(-1, taskName, taskContent, taskPriority, false);
+			
+			toDoList.addItem(saveing);
 			break;
 			
 		case 3:
