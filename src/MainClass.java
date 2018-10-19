@@ -10,6 +10,9 @@ public class MainClass {
 		do {
 			showMenu();
 			int input = readInput();
+			if(input==9)exit =true;
+		}while(!exit);
+	}
 	public static void showMenu(){
 		System.out.println("Welcome to To Do List Application");
 		showCurrentList();
