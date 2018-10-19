@@ -38,7 +38,9 @@ public class MainClass {
 			break;
 			
 		case 3:
-			System.out.println("3");
+			System.out.println("3 , Delete an item, please input the task id");
+			String taskid=scanner.nextLine();
+			
 			break;
 			
 		case 9:

@@ -12,4 +12,17 @@ public class ToDoList {
 	{
 		return toDoList;
 	}
+	
+	public boolean deleteItem (int taskId)
+	{
+		ArrayList<Task> newToDoList = new ArrayList<Task>();
+
+		for(Task task:toDoList)
+		{
+			if(task.getTaskId()!=taskId)
+				newToDoList.add(task);
+		}
+		toDoList=newToDoList;
+		return true;
+	}
 }
