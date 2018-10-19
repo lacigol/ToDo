@@ -17,6 +17,8 @@
     <path id="ToDoListApp.classpath">
         <pathelement location="bin"/>
         <path refid="JUnit 4.libraryclasspath"/>
+        <pathelement location="lib/hamcrest-core-1.3.jar"/>
+        <pathelement location="lib/junit-4.11.jar"/>
     </path>
     <target name="init">
         <mkdir dir="bin"/>
