@@ -4,7 +4,6 @@ import java.util.Scanner;
 public class MainClass {
 	
 	static ToDoList toDoList = new ToDoList();
-	ToDoList toDoList = new ToDoList();
 	
 	public static void main(String[] args){
 		boolean exit = false;
@@ -20,6 +19,8 @@ public class MainClass {
 		System.out.println("3. Delete an item");
 		System.out.println("4. Mark an item as complete");
 		System.out.println("9. Quit");
+	}
+	
 	public static int readInput(){
 		Scanner scanner = new Scanner(System.in);
 		int input = scanner.nextInt();	
