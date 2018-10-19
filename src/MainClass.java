@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class MainClass {
-	
+	ToDoList toDoList = new ToDoList();
 	public static void main(String[] args){
 		boolean exit = false;
 		do {
@@ -20,6 +20,7 @@ public class MainClass {
 		System.out.println("2. Add new item");
 		System.out.println("3. Delete an item");
 		System.out.println("4. Mark an item as complete");
+		System.out.println("5. Export as file");
 		System.out.println("9. Quit");
 		System.out.print("Enter your choice: ");
 	}
@@ -40,7 +41,9 @@ public class MainClass {
 		case 3:
 			System.out.println("3");
 			break;
-			
+		case 5:
+			System.out.println("5 exported as C:\\temp\\todolist.txt");
+			break;
 		case 9:
 
 			break;
