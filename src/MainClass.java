@@ -4,16 +4,13 @@ import java.util.Scanner;
 public class MainClass {
 	
 	static ToDoList toDoList = new ToDoList();
+	ToDoList toDoList = new ToDoList();
 	
 	public static void main(String[] args){
 		boolean exit = false;
 		do {
 			showMenu();
 			int input = readInput();
-			if (input==9) exit=true;
-		} while (!exit);
-	}
-	
 	public static void showMenu(){
 		System.out.println("Welcome to To Do List Application");
 		showCurrentList();
@@ -23,9 +20,6 @@ public class MainClass {
 		System.out.println("3. Delete an item");
 		System.out.println("4. Mark an item as complete");
 		System.out.println("9. Quit");
-		System.out.print("Enter your choice: ");
-	}
-	
 	public static int readInput(){
 		Scanner scanner = new Scanner(System.in);
 		int input = scanner.nextInt();	
